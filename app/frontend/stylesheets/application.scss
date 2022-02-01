@@ -18,3 +18,32 @@
     margin-right: 0;
   }
 }
+
+.form-control:focus {
+  background-color: rgba(250, 235, 215, 0.2);
+  border-color: rgba(249, 164, 130, 0.7);
+  box-shadow: 0 0 0 0.1rem rgba(249, 164, 130, 0.35);
+}
+
+.btn-outline-secondary {
+  color: coral;
+  border-color: rgba(249, 164, 130, 0.7);
+  &:hover {
+    background-color: coral;
+    border-color: rgba(249, 164, 130, 0.7);
+  }
+}
+
+.link {
+  color: coral;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: coral;
+  text-decoration: underline;
+}
+
+.text-coral {
+  color: coral;
+}

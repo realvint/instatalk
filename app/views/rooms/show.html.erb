@@ -1,10 +1,14 @@
-<h1>Room <%= @room.id %></h1>
+<div class="justify-content-between d-md-flex">
+  <h3>Chat Room <span class="text-coral"><%= @room.id %></span></h3>
+  <div>
+    <%= link_to 'Leave room', root_path, class: 'btn btn-outline-secondary btn-sm mb-2 mb-md-0' %>
+  </div>
+</div>
 
-<%= link_to "Leave", root_path %>
 
 <p id="notice"><%= notice %></p>
 
-<div class="messages">
+<div class="messages mt-3">
   <div class="messages-inner" id="messages" data-room-id="<%= @room.id %>">
     <%= render @room.messages %>
   </div>
