@@ -37,7 +37,7 @@ const createRoomChannel = (roomId) => {
       messages.scrollTop = messages.scrollHeight
     },
 
-    speak: function(message) {
+    speak(message) {
       return this.perform('speak', {
         message: message
       })
