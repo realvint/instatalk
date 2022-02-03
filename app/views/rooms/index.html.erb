@@ -1,0 +1,13 @@
+<div class="card ps-4 pb-3">
+  <p id="notice"><%= notice %></p>
+
+  <h1>Chat Rooms</h1>
+
+  <ul class="mt-4 list-unstyled">
+    <%= render @rooms %>
+  </ul>
+
+  <div class="mt-2">
+    <%= render 'rooms/form', room: @room %>
+  </div>
+</div>

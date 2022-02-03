@@ -1,0 +1,49 @@
+.messages {
+  // overflow: hidden;
+  position: relative;
+  height: 60vh;
+  border: 1px solid #f0f0f0;
+
+  &-inner {
+    overflow: auto;
+    position: absolute;
+    max-height: 60vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .message {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.form-control:focus {
+  background-color: rgba(250, 235, 215, 0.2);
+  border-color: rgba(249, 164, 130, 0.7);
+  box-shadow: 0 0 0 0.1rem rgba(249, 164, 130, 0.35);
+}
+
+.btn-outline-secondary {
+  color: coral;
+  border-color: rgba(249, 164, 130, 0.7);
+  &:hover {
+    background-color: coral;
+    border-color: rgba(249, 164, 130, 0.7);
+  }
+}
+
+.link {
+  color: coral;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: coral;
+  text-decoration: underline;
+}
+
+.text-coral {
+  color: coral;
+}
